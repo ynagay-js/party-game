@@ -1,3 +1,36 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v29-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v29-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* allura-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Allura';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/allura-v21-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -13,5 +46,94 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    /* height: calc(100vh - 400px); */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    font: 600 12px "Montserrat";
+    text-transform: uppercase;
     background-color: #ff4646;
+    color: aliceblue;
 }
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    margin: 12px;
+}
+
+.link {
+    text-decoration: none;
+    color: #181c29;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/volleyball.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 35%;
+    opacity: 0.25;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: calc(100vh - 150px);
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 12px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.round-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100px;
+    border: 1px dotted wheat;
+    border-radius: 50px;
+    background-color: aquamarine;
+    opacity: 0.5;
+}
+
+/* .footer-container {
+    display: flex;
+    height: 400px;
+    background-image: url(assets/img/v1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 45%;
+    opacity: 0.25;
+} */
