@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ff4646;
+}
