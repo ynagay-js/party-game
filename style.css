@@ -134,7 +134,7 @@ button:hover, button:active {
     flex-wrap: wrap;
     align-items: center;
     gap: 0;    
-    font: 400 25px "Bellota";
+    font: 400 30px "Bellota";
 }
 
 .team-name-container {
@@ -149,8 +149,9 @@ button:hover, button:active {
     overflow: hidden;
     resize: none;
     text-align: center;
+    align-items: center;
     max-width: 230px; /*refactor later*/
-    min-height: 50px;
+    min-height: 100px;
     max-height: 200px;
     box-shadow: none;
     outline: none;
@@ -163,6 +164,10 @@ button:hover, button:active {
 
   .team-1 {
     color: aquamarine;
+}
+
+.team-2 {
+    color: black;
 }
 .points-container {
     display: flex;

@@ -1,31 +1,36 @@
 window.onload = () => {
-  let pointerId = document.getElementById("points-container");
+  let pointerElem = document.getElementById("points-container");
+  let teamId = document.getElementById("team-points").getAttribute("id");
+  let pointerElem2 = document.getElementById("points-container-2");
+  let teamId2 = document.getElementById("team-points-2").getAttribute("id");
 
-  new PointsCounter(pointerId);
+  new PointsCounter(pointerElem, teamId);
+  new PointsCounter(pointerElem2, teamId2);
 };
 
 class PointsCounter {
-  constructor(elem) {
+  constructor(elem, id) {
     this._elem = elem;
+    this._id = id;
     elem.onclick = this.onClick.bind(this);
   }
 
-  subtract() {
-    let currentCounterValue = document.getElementById("team-points").innerHTML;
+  subtract(id) {
+    let currentCounterValue = document.getElementById(id).innerHTML;
     if (currentCounterValue > 0) {
-      document.getElementById("team-points").innerHTML = --currentCounterValue;
+      document.getElementById(id).innerHTML = --currentCounterValue;
     }
   }
 
-  add() {
-    let currentCounterValue = document.getElementById("team-points").innerHTML;
-    document.getElementById("team-points").innerHTML = ++currentCounterValue;
+  add(id) {
+    let currentCounterValue = document.getElementById(id).innerHTML;
+    document.getElementById(id).innerHTML = ++currentCounterValue;
   }
 
   onClick(event) {
     let action = event.target.dataset.action;
     if (action) {
-      this[action]();
+      this[action](this._id);
     }
   }
 }
