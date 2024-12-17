@@ -47,7 +47,8 @@ body {
     font-family: "Pacifico";
     text-transform: uppercase;
     background-color: #ff4646;
-    color: aliceblue;
+    color: aliceblue;    
+    cursor: url('assets/img/ball-pointer_cropped.png'), auto;
 }
 
 h1 {
@@ -71,8 +72,11 @@ h2 {
     color: #181c29;
 }
 
-button:hover, button:active {
-    cursor: pointer;
+.link:hover,
+link:active,
+button:hover,
+button:active {
+    cursor: url('assets/img/ball-pointer_cropped.png'), pointer;
 }
 
 .background {
@@ -116,7 +120,7 @@ button:hover, button:active {
     grid-template-columns: 1fr 2fr 1fr;
     gap: 12px;
     width: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .round-section {
