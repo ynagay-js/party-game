@@ -6,6 +6,7 @@
     <title>New Year 2024</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div class="background">
@@ -13,12 +14,19 @@
         <header class="header">
             <div class="container header-container">
                 <a href="index.html" class="link home-link"></a>
-                <h1 class="header-title">Могучие шарики</h1>
-                <h2 class="header-subtitle">Мы - Команда!!!</h2>
+                <h1 class="header-title">могучие шарики</h1>
+                <h2 class="header-subtitle">мы - команда!!!</h2>
             </div>
         </header>
         <main class=" container main-container">
-            <div class="section-container team-section"></div>
+            <div class="section-container team-section">
+                <p class = "team-name-container team-1"><span class="textarea" role="textbox" contenteditable></span></p>
+                <div class="points-container" id="points-container">
+                <p class="team-points" id="team-points">0</p>
+                <button class="counter-button button-minus" id="button-minus" data-action="subtract"></button>
+                <button class="counter-button button-plus" id="button-plus" data-action="add"></button>
+                </div>
+            </div>
             <div class="section-container round-section">
                 <div class="game">
                     <a href="/party-game/pages/round-1.html" class="link round-link"></a>
