@@ -155,7 +155,7 @@ button:active {
     resize: none;
     text-align: center;
     align-items: center;
-    max-width: 230px; /*refactor later*/
+    max-width: 230px; /*refactor*/
     min-height: 100px;
     max-height: 200px;
     box-shadow: none;
