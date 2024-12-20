@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Round 1</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../assets/favicon.ico">
+    <script type="text/javascript" src="../scripts/quiz.js"></script>
 </head>
+
 <body>
+
     <body>
         <div class="background">
         </div>
@@ -19,20 +23,33 @@
             </div>
         </header>
         <main class=" container quiz-container">
-                <div class="quiz-window">
-                    <button class="slider-button prev"></button>
-                    <ul class="question-container">
-                        <li class="question-item">
-                            <img src="../assets/img/quiz/quiz-start.jpg" alt="quiz-start" class="slide quiz-start" id="quiz-start"></img>
-                        </li>
-                        <li class="question-item">
-                            <img src="../assets/img/quiz/question-1.jpg" alt="question-1" class="slide question-1" id="question-1"></img>
-                        </li>
-                    </ul>
-                    <button class="slider-button next"></button>
+            <div class="quiz-window">
+                <button class="slider-button prev" id="prev" data-action="prev"></button>
+                <div class="question-container">
+                    <img src="../assets/img/quiz/quiz-start.jpg" alt="quiz-start" class="slide quiz-start"
+                        id="quiz-start">
+                    <img src="../assets/img/quiz/question-1.jpg" alt="question-1" class="slide question-1"
+                        id="question-1">
+                    <img src="../assets/img/volleyball.png" alt="question-1" class="slide question-2" id="question-2">
                 </div>
-                <div class="timer">1234</div>
-        </main> 
+                <button class="slider-button next" id="next" data-action="next"></button>
+            </div>
+            <div class="timer-container">
+                <button class="timer-button-on" id="timer-button"></button>
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <div class="close">&times;</div>
+                        <div class="timer-display">30</div>
+                        <div class="timer-buttons">
+                            <button class="timer-button start">start</button>
+                            <button class="timer-button stop">stop</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
     </body>
 </body>
+
 </html>
